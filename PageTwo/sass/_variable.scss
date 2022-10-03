@@ -1,0 +1,16 @@
+@mixin proflex($df,$jc,$fd){
+    display: $df;
+    justify-content: $jc;
+    flex-direction: $fd;
+}
+@mixin projc ($df,$jc){
+    display: $df;
+    justify-content: $jc;
+}
+@mixin proali($df,$jc,$ali) {
+    display: $df;
+    justify-content: $jc;
+    align-items: $ali;
+}
+$navcolor:rgba(48, 201, 235, 0.833);
+$bgcl: gainsboro;

@@ -1,0 +1,228 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  background: gainsboro;
+  margin: 0;
+  padding: 0;
+}
+
+.nav1 {
+  display: none;
+}
+
+.nav {
+  background-color: rgba(48, 201, 235, 0.833);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+@media (max-width: 412px) {
+  .nav .nav-left li {
+    display: none;
+  }
+}
+.nav .nav-left {
+  padding: 10px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav .nav-left .logo h1 {
+  font-weight: bold;
+  color: white;
+}
+.nav .nav-left .logo h1 span {
+  color: rgb(30, 54, 160);
+}
+.nav .nav-left img {
+  border-radius: 50px;
+}
+.nav .nav-left ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.nav .nav-left ul li {
+  border: 1px white solid;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  padding: 5px;
+}
+.nav .nav-left ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.nav .nav-left ul li:hover {
+  background-color: rgba(0, 0, 255, 0.18);
+  cursor: pointer;
+}
+.nav .nav-left ul li:hover a {
+  color: white;
+}
+.nav .nav-right {
+  text-align: center;
+  margin-right: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav .nav-right button {
+  padding: 10px;
+  width: 80px;
+  background-color: rgba(0, 0, 255, 0.18);
+  border-radius: 10px;
+  border: 1px white solid;
+  gap: 5px;
+  font-size: 16px;
+}
+.nav .nav-right button a {
+  text-decoration: none;
+  color: white;
+}
+.nav .nav-right button:hover {
+  background-color: white;
+  cursor: pointer;
+}
+.nav .nav-right button:hover a {
+  color: black;
+}
+
+.foot {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding: 5% 0%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  margin: 5% 0%;
+}
+
+@media (max-width: 412px) {
+  .foot {
+    width: 100%;
+  }
+  .foot .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .foot .footer i, .foot .footer span {
+    font-size: 15px;
+  }
+  .foot .footer img {
+    width: 15px;
+    height: 15px;
+  }
+  .foot .footer .f-right {
+    margin-left: 20px;
+  }
+  .foot .footer .f-center {
+    margin-left: 15px;
+  }
+  .foot .footer p {
+    font-size: 15px;
+    margin: 1px;
+  }
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.footer .f-left, .footer .f-center, .footer .f-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer .f-left .left, .footer .f-center .left, .footer .f-right .left {
+  margin: 5px;
+  display: flex;
+  gap: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  background: white;
+  border-radius: 7px;
+  margin-top: 5%;
+}
+.form .header {
+  display: flex;
+  width: 100%;
+  background: rgba(48, 201, 235, 0.833);
+  border-radius: 7px 7px 0px 0px;
+}
+.form .header button {
+  border: none;
+  padding: 20px;
+  font-size: 20px;
+  margin-left: 2%;
+  background: rgba(48, 201, 235, 0);
+}
+.form .f-main {
+  display: flex;
+  width: 100%;
+  background: white;
+  flex-direction: column;
+}
+.form .f-main p {
+  margin-left: 3%;
+  font-size: 17px;
+  line-height: 15px;
+}
+.form .f-main p span {
+  font-weight: bold;
+}
+.form .map {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: white;
+  margin-bottom: 5%;
+}
+
+@media (max-width: 412px) {
+  .form {
+    width: 90%;
+  }
+  .nav1 {
+    display: flex;
+    justify-content: center;
+  }
+  .nav1 ul {
+    display: flex;
+    list-style: none;
+    gap: 3px;
+    padding: 10px;
+  }
+  .nav1 ul li {
+    padding: 5px;
+    background-color: rgb(30, 125, 184);
+    color: white;
+    border: grey 1px solid;
+  }
+  .nav1 ul li a {
+    text-decoration: none;
+  }
+  .nav1 ul li:hover {
+    background-color: white;
+    border: 1px black solid;
+  }
+}/*# sourceMappingURL=main.css.map */

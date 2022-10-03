@@ -1,0 +1,30 @@
+@import 'variable';
+.data{
+    margin-top: 5%;
+    display: flex;
+    border-top: gray 1px solid;
+    .data-left{
+        display: flex;
+        flex: 2;
+        gap: 5%;
+        margin-top: 3%;
+
+        .left{
+            @include proflex(flex,center,column);
+            gap:10px
+        }
+        strong{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    .data-right{
+        flex: 1;
+        @include proflex(flex,center,column);
+    }
+}
+.data:nth-child(9){
+    // background-color: aqua;
+    border-bottom: gray 1px solid;
+    padding-bottom: 40px;
+}

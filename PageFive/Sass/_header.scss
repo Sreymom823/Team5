@@ -1,0 +1,14 @@
+@import "variable";
+.header{
+    display: flex;
+    width: 100%;
+    background: $navcolor;
+    border-radius: 7px 7px 0px 0px;
+    button{
+        border: none;
+        padding: 20px;
+        font-size: 20px;
+        margin-left: 2%;
+        background:rgba(48, 201, 235, 0);
+    }
+}

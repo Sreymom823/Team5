@@ -1,0 +1,35 @@
+.foot{
+    width: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.footer{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    .f-left ,.f-center ,.f-right{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .title{
+            font-size: 20px;
+            margin-left: 9px;
+            font-weight: bold;
+            
+        }
+        .left{
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        
+        }
+    }
+}
+
+

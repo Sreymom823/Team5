@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    background: gainsboro;
+    margin: 0;
+    padding: 0;
+}
+.nav1{
+    display: none;
+}
+@import "nav";
+@import "footer";
+@import "form";
+

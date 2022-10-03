@@ -1,0 +1,20 @@
+@use 'sass:map';
+$breakPoints: (
+    medium: 670px,
+    small: 412px
+);
+@mixin proflex ($f, $jc, $fd){
+    display: $f;
+    justify-content: $jc;
+    flex-direction: $fd;
+}
+@mixin  projc($f, $sp){
+    display: $f;
+    justify-content: $sp;
+}
+@mixin responsiveSize($key) {
+    $size: map.get($breakPoints, $key);
+    @media(max-width:$size) {
+        @content;    
+    }
+}
