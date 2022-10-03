@@ -1,0 +1,9 @@
+.forms {
+  background-color: chocolate;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.forms input {
+  background: #000;
+}/*# sourceMappingURL=-forms.css.map */

@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-image: url(https://www.cmc-consultants.com/hubfs/Blog%20Post%20Images/shutterstock_714889444.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@import 'nav';
+@import 'content';
+@import 'footer';
+@import 'responsive';
+

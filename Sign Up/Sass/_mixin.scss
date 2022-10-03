@@ -1,0 +1,15 @@
+@use 'sass:map';
+$breakPoints: (
+    medium: 884px,
+    small: 412px
+);
+@mixin flexpro ($f,$jc) {
+    display: $f;
+    justify-content: $jc;
+}
+@mixin responsiveSize($key) {
+    $size: map.get($breakPoints, $key);
+    @media(max-width:$size) {
+        @content;    
+    }
+}

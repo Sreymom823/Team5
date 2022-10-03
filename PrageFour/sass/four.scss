@@ -1,0 +1,14 @@
+@import 'nav';
+@import 'footer';
+@import 'variable';
+@import 'dataform';
+@import 'forms';
+@import 'responsive';
+body{
+    background: gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

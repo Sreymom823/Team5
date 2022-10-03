@@ -1,0 +1,11 @@
+@mixin proflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin projc {
+    display: flex;
+    justify-content: space-between;
+}
+$navcolor:rgba(48, 201, 235, 0.833);

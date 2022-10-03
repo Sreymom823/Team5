@@ -1,0 +1,138 @@
+@import 'mixin';
+.nav{
+    @include responsiveSize (medium){
+        .nav-right{
+            width: 20%;
+            button{
+                padding: 5px;
+                // background-color: rgb(64, 255, 0);
+            }
+        }
+    }
+}
+.nav{
+    @include responsiveSize (small){
+        .nav-left{
+            ul{
+                display: none;
+            }
+            img{
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .nav-right{
+            width: 40%;
+            button{
+                font-size: 15px;
+            }
+            // background-color: orange;
+        }
+    }
+}
+body{
+    background-color: white;
+}
+.data-form{
+    @include responsiveSize(small){
+        width: 90%;
+        // background-color: rgb(68, 15, 15);
+        .header{
+            margin-top: 5%;
+            margin: 0px 10px;
+            button{
+                font-weight: bold;
+                color: white;
+                font-size: 17px;
+            }
+        }
+        .name{
+            width: 100%;
+            // background: #000;
+            display: flex;
+            flex-direction: column;
+            .form{
+                width: 100%;
+                margin-top: 25px;
+            }
+
+        }
+        .form{
+            margin-top: -15px;
+        }
+        .uplaodcv{
+            margin-top: 3%;
+            // background-color: orange;
+            strong ,p{
+                font-size: 14px;
+            }
+            img{
+                width: 100px;
+                margin-right: -20px;
+            }
+        }
+        .group-form{
+            .apply{
+                button{
+                    width: 30%;
+                }
+            }
+        }
+        .nav1{
+            display: flex;
+            justify-content: center;
+            // background-color: aquamarine;
+            ul{
+                display: flex;
+                list-style: none;
+                gap: 3px;
+                padding: 10px;
+                // background:cornflowerblue ;
+            a{     display: flex;
+                    text-decoration: none;
+                    li{
+                        padding: 5px;
+                        background-color:rgb(30, 125, 184);
+                        color: white;
+                        border:  grey 1px solid;
+                        // border-radius: 10px;
+                    }
+                    // li:hover{
+                    //     background-color: #000;
+                    // }
+                }
+            
+            }
+        }
+    }
+}
+
+.foot{
+    .footer{
+        @include responsiveSize(small){
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 15px;
+            i ,span{
+                font-size: 15px; 
+            }
+            img{
+                width:15px;
+                height: 15px;
+            }
+            .f-right{
+                margin-left: 20px;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+            }
+            .f-center{
+              margin-left: 15px;
+            }
+            p{
+                font-size: 15px;
+                margin: 1px;
+            }
+        }
+    }
+}

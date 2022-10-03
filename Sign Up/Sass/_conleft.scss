@@ -1,0 +1,28 @@
+@import 'mixin';
+@import "variable";
+.container-left{
+    @include responsiveSize(small){
+        width: 40%;
+    }
+    background: $bg;
+    width: 40%;
+    text-align: center;
+    border-radius: 8px 0px 0px 8px;
+    .title{
+        h1{
+            @include flexpro (flex, center);
+            margin-top: 75%;
+            color: white;
+            span{
+                color: $color;
+            }
+        }
+    }
+}
+.form{
+    .container-left{
+        @include responsiveSize(small){
+            display: none;
+        }
+    }
+}

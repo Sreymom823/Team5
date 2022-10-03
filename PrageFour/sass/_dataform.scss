@@ -1,0 +1,75 @@
+@import 'variable';
+.data-form{
+    width: $maxwidth;
+    margin-top: 5%;
+    @include proflex (flex, flex-start,column);
+    .nav1{
+        display: none;
+    }
+    .header{
+        background-color:$navcolor;
+        border-radius: 7px 7px 0px 0px;
+        padding: 8px;
+        button{
+            font-size: 20px;
+            margin-left: 2%;
+            border: none;
+            padding: $btnpadding;
+            background-color: rgba(0, 0, 255, 0);
+        }
+    }
+    .group-form{
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        border-radius:  0px 0px 10px 10px;
+        background-color: $fontcolor;
+        @include proali(flex,center,center);
+        flex-direction:column ;
+        gap: 30px;
+        padding:5% 0%;
+        label{
+            font-size: 20px;
+        }
+        .name{
+            width: $formwidth;
+            display: flex;
+            justify-content: center;
+            gap: 3%;
+            .form{
+               @include flexjc(flex,column);
+                input{
+                  padding: $btnpadding;
+                }
+            }
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            width: $formwidth;
+            input{
+              padding: $btnpadding;
+            }
+        }
+        .uplaodcv{
+            width: $formwidth;
+            display: flex;
+            border:1px grey solid;
+            .uplaod{
+                @include proflex(flex,center,column); 
+                margin: 5% 0%;
+            }
+        }
+        .apply{ 
+            @include proflex(flex,center,center);   
+            width: $maxwidth;  
+            button{
+                padding: $btnpadding;
+                border: none;
+                border-radius: 10px;
+                color: $fontcolor;
+                width: 15%;
+                background-color: $navcolor;
+            }
+        }
+    }
+}
+
